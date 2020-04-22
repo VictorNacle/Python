@@ -1,4 +1,4 @@
-# Here are all the installs and imports you will need for your word cloud script and uploader widget
+# Here are all the installs and imports we need for our word cloud script and uploader widget
 
 !pip install wordcloud
 !pip install fileupload
@@ -42,7 +42,7 @@ def calculate_frequencies(file_contents):
     "their", "what", "which", "who", "whom", "this", "that", "am", "are", "was", "were", "be", "been", "being", \
     "have", "has", "had", "do", "does", "did", "but", "at", "by", "with", "from", "here", "when", "where", "how", \
     "all", "any", "both", "each", "few", "more", "some", "such", "no", "nor", "too", "very", "can", "will", "just", "in", "on", "up"]
-    # LEARNER CODE START HERE
+    
     text = "".join(i for i in file_contents if i not in punctuations)
     
     list = text.lower().split(" ")
